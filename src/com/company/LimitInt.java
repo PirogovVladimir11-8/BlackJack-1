@@ -6,6 +6,10 @@ package com.company;
 public class LimitInt extends Intellect {
     private int limit;
 
+    public LimitInt(int limit) {
+        this.limit = limit;
+    }
+
     @Override
     public Command decide(int score){
         if (score<limit)
